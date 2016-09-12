@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 var connection_string = "mongodb://localhost:27017/familytree";
-//mongoose.connect(connection_string);
+mongoose.connect(connection_string);
 
 app.use(express.static('./app'));
 app.use(bodyParser.urlencoded({'extended': 'true'})); // standard--Pls learn more google 
